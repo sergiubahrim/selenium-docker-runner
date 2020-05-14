@@ -11,7 +11,7 @@ pipeline {
                 sh "docker-compose up search-module-chrome coface-test-module-chrome --no-color"
             }
         }
-        tage("Shutdown the grid") {
+        stage("Shutdown the grid") {
             steps {
                 sh "docker-compose down --no-color"
             }
