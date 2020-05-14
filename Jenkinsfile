@@ -8,13 +8,14 @@ pipeline {
         }
         stage("Run the tests") {
             steps {
-                sh "docker-compose up search-module-chrome coface-test-module-chrome"
+                sh "docker-compose up search-module-chrome search-module-firefox"
             }
         }
-        stage("Shutdown the grid") {
-            steps {
-                sh "docker-compose down"
-            }
+    }
+    post{
+        always{
+            archiveArtifacts artifacts: 'output/**'
+            sh "docker-compose down"
         }
     }
 }

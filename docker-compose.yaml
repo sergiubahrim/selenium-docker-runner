@@ -32,7 +32,7 @@ services:
       - HUB_HOST=hub
       - MODULE=search-demo.xml
     volumes:
-      - ./search-result-chrome:/Users/sergiu.bahrim/seleniumGrid/test-output
+      - ./output/search-result-chrome:/Users/sergiu.bahrim/seleniumGrid/test-output
   search-module-firefox:
     image: sergiuimage/selenium-tests
     depends_on:
@@ -43,7 +43,7 @@ services:
       - HUB_HOST=hub
       - MODULE=search-demo.xml
     volumes:
-      - ./search-result-firefox:/Users/sergiu.bahrim/seleniumGrid/test-output
+      - ./output/search-result-firefox:/Users/sergiu.bahrim/seleniumGrid/test-output
   coface-test-module-chrome:
     image: sergiuimage/selenium-tests
     depends_on:
@@ -54,7 +54,7 @@ services:
       - BROWSER=chrome
       - MODULE=coface_tests.xml 
     volumes:
-      - ./coface-result-chrome:/Users/sergiu.bahrim/seleniumGrid/test-output
+      - ./output/coface-result-chrome:/Users/sergiu.bahrim/seleniumGrid/test-output
   coface-test-module-firefox:
     image: sergiuimage/selenium-tests
     depends_on:
@@ -65,4 +65,4 @@ services:
       - BROWSER=firefox
       - MODULE=coface_tests.xml 
     volumes:
-      - ./coface-result-firefox:/Users/sergiu.bahrim/seleniumGrid/test-output
+      - ./output/coface-result-firefox:/Users/sergiu.bahrim/seleniumGrid/test-output
