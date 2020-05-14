@@ -1,12 +1,17 @@
 pipeline {
     agent any
     stages {
-        stage("Run Test") {
+        stage("Raise the grid (hub + nodes)") {
             steps {
-                sh "docker-compose up --no-color"
+                sh "docker-compose up -d hub chrome firefox --no-color"
             }
         }
-        stage("Bring selenium grid down") {
+        stage("Run the tests") {
+            steps {
+                sh "docker-compose up search-module-chrome coface-test-module-chrome --no-color"
+            }
+        }
+        tage("Shutdown the grid") {
             steps {
                 sh "docker-compose down --no-color"
             }

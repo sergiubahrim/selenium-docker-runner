@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Coface Tests" duration-ms="91584" started-at="2020-05-14T08:39:06Z" finished-at="2020-05-14T08:40:37Z">
+  <suite name="Coface Tests" duration-ms="77365" started-at="2020-05-14T14:09:52Z" finished-at="2020-05-14T14:11:09Z">
     <groups>
     </groups>
-    <test name="Add One Time Check service" duration-ms="91584" started-at="2020-05-14T08:39:06Z" finished-at="2020-05-14T08:40:37Z">
+    <test name="Add One Time Check service" duration-ms="77365" started-at="2020-05-14T14:09:52Z" finished-at="2020-05-14T14:11:09Z">
       <class name="tests.CofaceTests">
-        <test-method status="PASS" signature="before()[pri:0, instance:tests.CofaceTests@6ad5c04e]" name="before" is-config="true" duration-ms="10245" started-at="2020-05-14T08:39:06Z" finished-at="2020-05-14T08:39:16Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:tests.CofaceTests@6ad5c04e]" name="before" is-config="true" duration-ms="3884" started-at="2020-05-14T14:09:52Z" finished-at="2020-05-14T14:09:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="FAIL" signature="cofaceAddScoringInquiry()[pri:0, instance:tests.CofaceTests@6ad5c04e]" name="cofaceAddScoringInquiry" duration-ms="81203" started-at="2020-05-14T08:39:16Z" finished-at="2020-05-14T08:40:37Z">
+        <test-method status="FAIL" signature="cofaceAddScoringInquiry()[pri:0, instance:tests.CofaceTests@6ad5c04e]" name="cofaceAddScoringInquiry" duration-ms="73372" started-at="2020-05-14T14:09:56Z" finished-at="2020-05-14T14:11:09Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='terms-agree']/fieldset/label/span[1] (tried for 40 second(s) with 500 milliseconds interval)]]>
@@ -51,10 +51,10 @@ Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable t
   (Session info: chrome=78.0.3904.70)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '5be239295b46', ip: '172.21.0.6', os.name: 'Linux', os.arch: 'amd64', os.version: '4.19.76-linuxkit', java.version: '1.8.0_191'
+System info: host: '35ca6b8effc9', ip: '172.23.0.6', os.name: 'Linux', os.arch: 'amd64', os.version: '4.19.76-linuxkit', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /tmp/.com.google.Chrome.qLx39E}, goog:chromeOptions: {debuggerAddress: localhost:37949}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 8e7af640607ff614e2a396e04e4...}
-Session ID: 8e7af640607ff614e2a396e04e44a27a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /tmp/.com.google.Chrome.FjexY5}, goog:chromeOptions: {debuggerAddress: localhost:46503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 9e41c865790df7c5b53a1bea196...}
+Session ID: 9e41c865790df7c5b53a1bea19665f45
 *** Element info: {Using=xpath, value=//*[@id='terms-agree']/fieldset/label/span[1]}
 at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -78,7 +78,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cofaceAddScoringInquiry -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:tests.CofaceTests@6ad5c04e]" name="quit" is-config="true" duration-ms="70" started-at="2020-05-14T08:40:37Z" finished-at="2020-05-14T08:40:37Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:tests.CofaceTests@6ad5c04e]" name="quit" is-config="true" duration-ms="71" started-at="2020-05-14T14:11:09Z" finished-at="2020-05-14T14:11:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
