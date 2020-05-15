@@ -13,7 +13,7 @@ pipeline {
         }
         stage("Run the tests") {
             steps {
-                sh "docker-compose up search-module-chrome search-module-firefox"
+                sh "docker-compose up search-module-chrome coface-test-module-firefox"
             }
         }
     }
