@@ -23,7 +23,7 @@ services:
     environment:
       - HUB_HOST=hub
   search-module-chrome:
-    image: sergiuimage/selenium-tests
+    image: sergiubahrim/selenium-docker
     depends_on:
       - chrome
       - firefox
@@ -34,7 +34,7 @@ services:
     volumes:
       - ./output/search-result-chrome:/Users/sergiu.bahrim/seleniumGrid/test-output
   search-module-firefox:
-    image: sergiuimage/selenium-tests
+    image: sergiubahrim/selenium-docker
     depends_on:
       - chrome
       - firefox
@@ -45,7 +45,7 @@ services:
     volumes:
       - ./output/search-result-firefox:/Users/sergiu.bahrim/seleniumGrid/test-output
   coface-test-module-chrome:
-    image: sergiuimage/selenium-tests
+    image: sergiubahrim/selenium-docker
     depends_on:
       - chrome
       - firefox
@@ -56,7 +56,7 @@ services:
     volumes:
       - ./output/coface-result-chrome:/Users/sergiu.bahrim/seleniumGrid/test-output
   coface-test-module-firefox:
-    image: sergiuimage/selenium-tests
+    image: sergiubahrim/selenium-docker
     depends_on:
       - chrome
       - firefox
